@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://avatars0.githubusercontent.com/u/26383303?s=400&v=4" alt="BackEndBR" width="150" />
+</p>
+
 ## Descrição da vaga ##
 Na IntMed é preferível as seguintes características:
 
@@ -35,3 +39,5 @@ Nosso processo de seleção consiste nas etapas:
 2) Entrevista
 3) Desafio 
  realizar Backend (Python/Django) e/ou Frontend(Angular ou React)
+
+As descrições para os desafios ficam em https://github.com/glairtonsantos/intmed-vagas/issues
