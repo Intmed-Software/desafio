@@ -1,20 +1,37 @@
-# Desafio
-Descrição do problema que será proposto
+## Descrição da vaga ##
+Na IntMed é preferível as seguintes características:
 
-## Requisitos ##
-Listar todas as regras de negócios que deverá ser aplicado no desafio
+- Proatividade para assumir responsabilidades e resolver problemas.
+- Capacidade de se auto-gerenciar e realizar as entregas.
+- Ser participativo e ter como propósito melhorar a vida das pessoas! (Afinal, somos uma HealthTech!)
 
-## O que será avaliado no desafio ##
-Descrever quais são os aspectos que será levado em consideração na correção do desafio
+## Os requisitos para a vaga ##
 
-## Opcionais ##
-Coisas que podem ser feita para incrementar o desafio
+- Experiência com integração de sistemas
+- Disponibilidade para trabalhar 40hs semanais
+- Python/Django/Django REST Framework
+- Angular 2+ (Typescript) ou React
+- API REST
+- Git
 
-## Full Stack ##
-Descrição para ser optar por fazer backend e frontend
+Além disso, seria um grande diferencial se você tivesse:
+- Conhecimento deploy e configuração de aplicações
+- Conhecimento em metodologias ágeis
+- Experiência em Mobile Nativo, React Native ou Flutter
+- Experiência com SQL e banco Oracle.
 
-## Frontend ##
-Descrição para se optar por fazer APENAS o frontend
+O salário será combinado de acordo com sua experiência.
 
-## Backend ## 
-Descrição para ser optar por fazer APENAS o backend
+## Oferecemos ##
+- Horário flexível
+- Possibilidade de 20% da carga horária remoto
+- Bônus semestral
+- Sem código de vestimenta
+- Trabalhar com projetos inovadores
+
+## Etapas ##
+Nosso processo de seleção consiste nas etapas:
+1) Análise do currículo
+2) Entrevista
+3) Desafio 
+ realizar Backend (Python/Django) e/ou Frontend(Angular ou React)
