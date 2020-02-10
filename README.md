@@ -30,7 +30,7 @@ O salário será combinado de acordo com sua experiência.
 - Horário flexível
 - Possibilidade de 20% da carga horária remoto
 - Bônus semestral
-- Sem código de vestimenta
+- Custeio de cursos e participação em eventos
 - Trabalhar com projetos inovadores
 
 ## Etapas ##
