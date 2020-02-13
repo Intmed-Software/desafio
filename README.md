@@ -33,7 +33,7 @@ O cadastro de Pacientes e Medicos pode ser realizado no Admin
 Pode ser utilizado qualquer versão do Django e qualquer pacote adicionais.
 
 ## Full Stack ##
-Se optar por fullstack, necessáriamente deverá ser o mesmo repositorio o backend e frontend
+Se optar por fullstack, deverá ser o mesmo repositorio o backend e frontend
 ```
 application/
   api/
