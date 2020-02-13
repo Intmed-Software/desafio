@@ -2,42 +2,51 @@
   <img src="https://avatars0.githubusercontent.com/u/26383303?s=400&v=4" alt="BackEndBR" width="150" />
 </p>
 
-## Descrição da vaga ##
-Na IntMed é preferível as seguintes características:
+# Desafio
+Uma rede de clínicas deseja um sistema que ajude seus pacientes a marcar consultas e os médicos a gerenciar os horários disponíveis.
 
-- Proatividade para assumir responsabilidades e resolver problemas.
-- Capacidade de se auto-gerenciar e realizar as entregas.
-- Ser participativo e ter como propósito melhorar a vida das pessoas! (Afinal, somos uma HealthTech!)
+## Requisitos ##
+Para isso foi levando as seguintes condições:
+ - Paciente e Medico vão possuir acesso com login e senha (perfils diferentes)
+ - Paciente deve visualizar na tela inicial suas consultas marcadas
+ - Paciente deve poder editar, marcar e cancelar consultas
+ - Paciente não pode marcar duas consultas no mesmo horário
+ - Medico deve visualizar na sua tela inicial suas consultas marcadas e as consultas livres
+ - Medico deve poder editar, adicionar e cancelar suas consultas
+ - Medico não pode possui duas consultas marcadas na mesma data
+ - Paciente e Medico podem filtrar suas consultas
 
-## Os requisitos para a vaga ##
+## Critérios de Avaliação ##
+ - Cumprimento dos requisitos
+ - Uso dos recursos disponíveis pelo framework
+ - Boas práticas de construção de API REST
+ - Organização do projeto e padronização de código
+ - Estilização e usabilidade: avaliar se o projeto está de acordo com o layout proposto (Frontend)
 
-- Experiência com integração de sistemas
-- Disponibilidade para trabalhar 40hs semanais
-- Python/Django/Django REST Framework
-- Angular 2+ (Typescript) ou React
-- API REST
-- Git
+## Frontend ## 
+Se optar por desenvolver apenas o Frontend:
+  - Pode utilizar essa [API](https://pages.github.com/) (vamos diponibilizar usuários)
+  - O Design proposto foi realizado no [Figma](https://www.figma.com/) está disponível nesse [link](https://www.figma.com/) 
 
-Além disso, seria um grande diferencial se você tivesse:
-- Conhecimento deploy e configuração de aplicações
-- Conhecimento em metodologias ágeis
-- Experiência em Mobile Nativo, React Native ou Flutter
-- Experiência com SQL e banco Oracle.
+## Backend ##
+O cadastro de Pacientes e Medicos pode ser realizado no Admin 
 
-O salário será combinado de acordo com sua experiência.
+## Full Stack ##
+Se optar por fullstack, necessáriamente deverá ser o mesmo repositorio o backend e frontend
+    - application/
+        - api/
+        - web/
+ 
+## Observações ##
+O repositório deve ter um README com as instruções de instalação
+  
 
-## Oferecemos ##
-- Horário flexível
-- Possibilidade de 20% da carga horária remoto
-- Bônus semestral
-- Custeio de cursos e participação em eventos
-- Trabalhar com projetos inovadores
+## Opcionais ##
+Esses são alguns itens opcionais que pode ser adicionado na solução
+ - Testes
 
-## Etapas ##
-Nosso processo de seleção consiste nas etapas:
-1) Análise do currículo
-2) Entrevista
-3) Desafio 
- realizar Backend (Python/Django) e/ou Frontend(Angular ou React)
+## Design ##
+Descrição do uso e acesso ao layout proposto
 
-As descrições para os desafios ficam em https://github.com/glairtonsantos/intmed-vagas/issues
+## API ##
+Descrição para consumir a API
