@@ -25,7 +25,7 @@ Para isso foi levando as seguintes condições:
 
 ## Frontend ## 
 Se optar por desenvolver apenas o Frontend:
-  - Pode utilizar essa [API] (https://developer.github.com/v3/) (vamos disponibilizar usuários)
+  - Pode utilizar essa [API](https://developer.github.com/v3/) (vamos disponibilizar usuários)
   - O Design proposto foi realizado no [Figma](https://www.figma.com/) está disponível nesse [link](https://www.figma.com/) 
 
 ## Backend ##
