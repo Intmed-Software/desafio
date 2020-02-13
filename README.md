@@ -25,28 +25,28 @@ Para isso foi levando as seguintes condições:
 
 ## Frontend ## 
 Se optar por desenvolver apenas o Frontend:
-  - Pode utilizar essa [API](https://pages.github.com/) (vamos diponibilizar usuários)
+  - Pode utilizar essa [API] (https://developer.github.com/v3/) (vamos disponibilizar usuários)
   - O Design proposto foi realizado no [Figma](https://www.figma.com/) está disponível nesse [link](https://www.figma.com/) 
 
 ## Backend ##
 O cadastro de Pacientes e Medicos pode ser realizado no Admin 
+Pode ser utilizado qualquer versão do Django e qualquer pacote adicionais.
 
 ## Full Stack ##
 Se optar por fullstack, necessáriamente deverá ser o mesmo repositorio o backend e frontend
-    - application/
-        - api/
-        - web/
- 
+```
+application/
+  api/
+  web/
+```
 ## Observações ##
 O repositório deve ter um README com as instruções de instalação
   
-
 ## Opcionais ##
 Esses são alguns itens opcionais que pode ser adicionado na solução
  - Testes
+ - Deploy
+ - Inspeção de código
 
-## Design ##
-Descrição do uso e acesso ao layout proposto
-
-## API ##
-Descrição para consumir a API
+## Como entregar o desafio? ##
+Enviar email para contato@intmed.com.br contendo o link para o repositório Github do projeto.
