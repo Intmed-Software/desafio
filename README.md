@@ -25,8 +25,9 @@ Para isso foi levando as seguintes condições:
 
 ## Frontend ## 
 Se optar por desenvolver apenas o Frontend:
-  - Pode utilizar essa [API](https://developer.github.com/v3/) (vamos disponibilizar usuários)
-  - O Design proposto foi realizado no [Figma](https://www.figma.com/) está disponível nesse [link](https://www.figma.com/) 
+  - Os dados podem ser mockados
+  - O Design proposto foi realizado no [Figma](https://www.figma.com/) está disponível nesse [link](https://www.figma.com/file/kJIvTRUJtKin3PFthaGXnj/Desafio-Full-Stack-Intmed?node-id=0%3A1) 
+```obs: é necessário criar um conta para visualizar as propiedades css```
 
 ## Backend ##
 O cadastro de Pacientes e Medicos pode ser realizado no Admin 
