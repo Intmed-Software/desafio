@@ -5,16 +5,23 @@
 # Desafio
 Uma rede de clínicas deseja um sistema que ajude seus pacientes a marcar consultas e os médicos a gerenciar os horários disponíveis.
 
+<p align="center">
+  <img src="https://i.ibb.co/2kY9xGV/A7RFSTk.png">
+</p>
+
 ## Requisitos ##
 Para isso foi levando as seguintes condições:
- - Paciente e Medico vão possuir acesso com login e senha (perfils diferentes)
+ - Paciente vai possuir acesso com login e senha
+ - Paciente vai poder realiza cadastrado
  - Paciente deve visualizar na tela inicial suas consultas marcadas
- - Paciente deve poder editar, marcar e cancelar consultas
+ - Paciente deve poder cancelar consultas
  - Paciente não pode marcar duas consultas no mesmo horário
- - Medico deve visualizar na sua tela inicial suas consultas marcadas e as consultas livres
- - Medico deve poder editar, adicionar e cancelar suas consultas
- - Medico não pode possui duas consultas marcadas na mesma data
- - Paciente e Medico podem filtrar suas consultas
+ - Após consulta marcada ela não deve está mais disponível na lista de opções
+ - Os horários deve seguir o seguinte padrão (dd/mm/YYYY) e (HH:mm), **ex. (01/01/2020) (13:00)**
+
+> Na Sessão ADMIN do sistema
+ - Medico deve possuir uma especialidade 
+ - Medico pode cadastrar uma ou mais datas e horários
 
 ## Critérios de Avaliação ##
  - Cumprimento dos requisitos
@@ -27,7 +34,7 @@ Para isso foi levando as seguintes condições:
 Se optar por desenvolver apenas o Frontend:
   - Os dados podem ser mockados
   - O Design proposto foi realizado no [Figma](https://www.figma.com/) está disponível nesse [link](https://www.figma.com/file/kJIvTRUJtKin3PFthaGXnj/Desafio-Full-Stack-Intmed?node-id=0%3A1) 
-```obs: é necessário criar um conta para visualizar as propiedades css```
+> _Para utilizar o Figma é necessário criar uma conta, ela será útil para visualizar as propriedades css do layout._
 
 ## Backend ##
 O cadastro de Pacientes e Medicos pode ser realizado no Admin 
@@ -41,13 +48,23 @@ application/
   web/
 ```
 ## Observações ##
-O repositório deve ter um README com as instruções de instalação
+- O repositório deve ter um README com as instruções de instalação
+- Pode se feito a entrega parcial do desafio
   
 ## Opcionais ##
 Esses são alguns itens opcionais que pode ser adicionado na solução
  - Testes
  - Deploy
  - Inspeção de código
+
+## Alguns links que podem ser importantes ##
+Algumas dicas que podem ser importante:
+- https://www.diolinux.com.br/2019/12/figma-ferramenta-design-prototipacao-navegador.html
+- https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html
+- https://angular.io/guide/styleguide
+- https://www.django-rest-framework.org/tutorial/quickstart/#quickstart
+- https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/coding-style/
+
 
 ## Como entregar o desafio? ##
 Enviar email para contato@intmed.com.br contendo o link para o repositório Github do projeto.
