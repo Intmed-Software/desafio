@@ -16,7 +16,7 @@ Para isso foi levando as seguintes condições:
  - Paciente deve visualizar na tela inicial suas consultas marcadas
  - Paciente deve poder cancelar consultas
  - Paciente não pode marcar duas consultas no mesmo horário
- - Após consulta marcada ela não deve está mais disponível na lista de opções
+ - Após consulta marcada ela não deve está mais disponível na de horários disponíveis do médico
  - Os horários deve seguir o seguinte padrão (dd/mm/YYYY) e (HH:mm), **ex. (01/01/2020) (13:00)**
 
 > Na Sessão ADMIN do sistema
@@ -41,7 +41,7 @@ Se optar por desenvolver apenas o Frontend:
 - Pode ser utilizado qualquer versão do Django e qualquer pacote adicional.
 
 ## Full Stack ##
-Se optar por fullstack, deverá ser o mesmo repositorio o backend e frontend
+Se optar por fullstack,o backend e frontend deverão estar no mesmo repositório
 ```
 application/
   api/
@@ -49,7 +49,7 @@ application/
 ```
 ## :bulb: Observações ##
 - O repositório deve ter um README com as instruções de instalação
-- Pode se feito a entrega parcial do desafio
+- Pode se feito a entrega parcial do desafio caso não tenha conseguido chegar até o fim
   
 ## Opcionais ##
 Esses são alguns itens opcionais que pode ser adicionado na solução
@@ -67,4 +67,4 @@ Algumas dicas que podem ser importante:
 
 
 ## :email: Como entregar o desafio? ##
-Enviar email para contato@intmed.com.br contendo o link para o repositório Github do projeto.
+Enviar email para contato@intmed.com.br com o título sendo o nome da vaga desejada, no qual se encontra na sessão de issues deste repositório, contendo o link para o repositório Github do projeto.
