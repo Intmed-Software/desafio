@@ -210,4 +210,4 @@ Algumas dicas que podem ser importante:
 - 
 
 ## :email: Como entregar o desafio? ##
-Enviar email para contato@intmed.com.br com o título sendo o nome da vaga desejada, no qual se encontra na sessão de issues deste repositório, contendo o link para o repositório Github do projeto.
+Enviar email para contato@intmed.com.br com o título sendo o nome da vaga desejada, no qual se encontra na sessão de [issues](https://github.com/Intmed-Software/vagas/issues) deste repositório, contendo o link para o repositório Github do projeto.
