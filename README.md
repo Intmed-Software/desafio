@@ -27,48 +27,26 @@ Durante este desafio você irá construir um sistema para uma clínica chamada M
 * O gestor da clínica pode alocar médicos em horários específicos de um dia
 * O gestor da clínica pode visualizar todas as consultas marcadas na clínica
 
-  
-## Requisitos ##
-Para isso foi levando as seguintes condições:
- - Paciente vai possuir acesso com login e senha
- - Paciente vai poder realiza cadastrado
- - Paciente deve visualizar na tela inicial suas consultas marcadas
- - Paciente deve poder cancelar consultas
- - Paciente não pode marcar duas consultas no mesmo horário
- - Após consulta marcada o horário do médico não deve está mais disponível para outros pacientes
- - Os horários das consultas devem seguir o seguinte padrão (dd/mm/YYYY) e (HH:mm), **ex. (01/01/2020) (13:00)**
 
-> Na Sessão ADMIN do sistema
- - Cadastrar, Editar e Remover Especialidades
- - Cadastrar, Editar e Remover Medicos
- - Medico deve possuir uma especialidade 
- - Medico pode cadastrar uma ou mais datas e horários
+## :pencil: Critérios de avaliação
+Serão avaliados os seguintes pontos no desafio final:
 
-## :pencil:Critérios de Avaliação ##
- - Cumprimento dos requisitos
- - Uso dos recursos disponíveis pelo framework
- - Domínio da Linguagem
- - Boas práticas de construção de API REST
- - Organização do projeto e padronização de código
- - Estilização e usabilidade: avaliar se o projeto está de acordo com o layout proposto (Frontend)
+* **Cumprimento dos requisitos:** A aplicação não possui escopo aberto e as funcionalidades implementadas devem atender os objetivos especificados. Neste critério vamos avaliar se a sua aplicação atende todos os requisitos de forma funcional
+* **Conhecimento e uso dos recursos da linguagem/framework:** Não recrie a roda! Utilize as ferramentas disponíveis na linguagem e framework utilizados a seu favor e consulte a documentação sempre que necessário. Nesse critério iremos avaliar o seu conhecimento na linguagem e framework utilizados e o empenho em entender e utilizar seus recursos
+* **Organização do projeto e padronização de código:** O seu projeto está organizado? É fácil se guiar na estrutura de pastas do código-fonte? Ela faz sentido diante do seu propósito? O seu código segue um padrão de escrita (próprio ou conveniconado pela comunidade)? Nesse critério iremos avaliar o nível de organização e padronização de escrita do seu código visando a legibilidade e entendimento.
+* **Estilização e usabilidade:** Iremos avaliar se a sua aplicação segue o layout proposto e a facilidade em usá-lo
 
-## 🎨 Layout
 
+## :gear: Backend
+
+## :art: Frontend
 
 ## 📅 Entrega
 Adicione todo o código da sua aplicação em um repositório **Github** contendo os códigos de cada parte do sistema implementada dentro de duas pastas: **backend** e/ou **frontend**. Dentro de um arquivo **README** adicione todas as instruções necessárias para que um de nossos instrutores consiga executar a aplicação.
 
 Com tudo pronto, envie um email para contato@intmed.com.br com o título sendo o nome da vaga desejada, no qual se encontra na sessão de [issues](https://github.com/Intmed-Software/vagas/issues) deste repositório, contendo o link para o repositório Github do projeto.
 
-Você tem até o prazo acordado com o recrutador para entregar o seu projeto. Entregas após o prazo devem ser justificadas anteriormente.
-
-## Full Stack ##
-Se optar por fullstack,o backend e frontend deverão estar no mesmo repositório
-```
-application/
-  api/
-  web/
-```
+Você tem até o prazo acordado com o recrutador para entregar o seu projeto. Entregas após o prazo devem ser justificadas anteriormente, caso contrário não serão avaliadas.
 
 ## Frontend ## 
 Se optar por desenvolver apenas o Frontend:
