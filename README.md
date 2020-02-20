@@ -84,12 +84,12 @@ Você deverá construir uma API, seguindo os padrões e boas práticas do REST c
 #### Listar especialidades médicas
 Lista todas as especialidades médicas disponíveis na clínica
 
-#### Requisição
+##### Requisição
 ```
 GET /especialidades/
 ```
 
-#### Resposta
+##### Resposta
 ```json
 [
     {
@@ -114,7 +114,53 @@ GET /especialidades/
 Deve ser possível filtrar a lista de especialidades retornadas por um termo de pesquisa, por exemplo:
 
 ```
-http://medicar.backend.com/especialidades/?search=ped
+GET /especialidades/?search=ped
+```
+
+#### Listar médicos
+Lista todos os médicos que atendem pela clínica
+
+##### Requisição
+```
+GET /medicos/
+```
+##### Retorno
+```json
+[
+    {
+      "id":1,
+      "nome": "Drauzio Varella",
+      "crm": "3711 - CE",
+      "especialidade": {
+        "id": 1,
+        "nome": "Pediatria"
+      }
+    },
+    {
+      "id":2,
+      "nome": "Gregory House",
+      "crm": "2544 - DF",
+      "especialidade": {
+        "id": 3,
+        "nome": "Cardiologia"
+      }
+    },
+    {
+      "id":3,
+      "nome": "Tony Tony Chopper",
+      "crm": "3087 - SP",
+      "especialidade": {
+        "id": 1,
+        "nome": "Pediatria"
+      }
+    }
+  ]
+```
+
+Deve ser possível filtrar a listagem de médicos pelo identificador de uma ou mais especialidade e nome do médico (termo de pesquisa), por exemplo:
+
+```
+GET /medicos/?search=maria&especialidade=1&especialidade=3
 ```
 
 ## :art: Frontend
@@ -138,34 +184,7 @@ Se optar por desenvolver apenas o Frontend:
 
 - Os endpoints devem ser apresentados da seguinte maneira
 
-**Lista as Especialidades**
-_<url_base>/especialidades/_
-```
-{
-  "count": 50,
-  "next": "<url_base>/especialidades/?page=",
-  "previous": "<url_base>/especialidades/?page=",
-  "results": [
-    {
-      "id":1,
-      "descricao": "Pediatria"
-    },
-    {
-      "id":2,
-      "descricao": "Ginecologia"
-    },
-    {
-      "id":3,
-      "descricao": "Cardiologia"
-    },
-    {
-      "id":4,
-      "descricao": "Clínico Geral"
-    }
-    ...
-  ]
-}
-```
+
 **Lista os Médicos de uma Especialidade**
 _<url_base>/especialidades/<especialidade_id>/medicos/_
 ```
