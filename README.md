@@ -195,6 +195,15 @@ _<url_base>/pacientes/<paciente_id>/consultas/_
   
 ## Opcionais ##
 Esses são alguns itens opcionais que pode ser adicionado na solução
+
+_Melhorias de Negócio_
+- Login e Cadastro de Médico
+- Tela de Gerenciamente de Consultas do Médico
+- Notificação do Médico de um Consulta Marcada ou Cancelada
+- Recuperação de Senha
+- Dashboard para Gestão da Rede Clínica (relatório de quantidade de consultas, gráficos, Rank, etc)
+
+_Melhoria Técnica_
  - Testes
  - Deploy
  - Inspeção de código
