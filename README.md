@@ -202,9 +202,55 @@ GET /consultas/
 ]
 ```
 
-#### Restrições
+##### Restrições
 * A listagem não deve exibir consultas para dia e horário passados
 * Os itens da listagem devem vir ordenados por ordem decrescente do dia e horário da consulta. As consultas mais próximas de acontecer devem vir primeiro
+
+#### Listar agendas disponíveis
+Lista todas as agendas disponíveis na clínica
+
+```json
+[
+  {
+    "id":1,
+    "dia": "2020-02-10",
+    "medico":     {
+      "id":1,
+      "nome": "Drauzio Varella",
+      "crm": "3711 - CE",
+      "especialidade": {
+        "id": 1,
+        "nome": "Pediatria"
+      }
+    },
+    "horarios": [
+      "14:00",
+      "14:15",
+      "16:00"
+    ]
+  },
+  {
+    "id":2,
+    "dia": "2020-02-10",
+    "medico":   {
+      "id":2,
+      "nome": "Gregory House",
+      "crm": "2544 - DF",
+      "especialidade": {
+        "id": 3,
+        "nome": "Cardiologia"
+      }
+    },
+    "horarios": [
+      "08:00",
+      "08:30",
+      "09:00",
+      "09:30",
+      "14:00"
+    ]
+  }
+]
+```
 
 ## :art: Frontend
 
