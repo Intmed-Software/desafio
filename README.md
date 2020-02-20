@@ -52,6 +52,16 @@ Para isso foi levando as seguintes condições:
  - Organização do projeto e padronização de código
  - Estilização e usabilidade: avaliar se o projeto está de acordo com o layout proposto (Frontend)
 
+## 🎨 Layout
+
+
+## 📅 Entrega
+Adicione todo o código da sua aplicação em um repositório **Github** contendo os códigos de cada parte do sistema implementada dentro de duas pastas: **backend** e/ou **frontend**. Dentro de um arquivo **README** adicione todas as instruções necessárias para que um de nossos instrutores consiga executar a aplicação.
+
+Com tudo pronto, envie um email para contato@intmed.com.br com o título sendo o nome da vaga desejada, no qual se encontra na sessão de [issues](https://github.com/Intmed-Software/vagas/issues) deste repositório, contendo o link para o repositório Github do projeto.
+
+Você tem até o prazo acordado com o recrutador para entregar o seu projeto. Entregas após o prazo devem ser justificadas anteriormente.
+
 ## Full Stack ##
 Se optar por fullstack,o backend e frontend deverão estar no mesmo repositório
 ```
