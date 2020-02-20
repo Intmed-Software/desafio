@@ -3,8 +3,10 @@
 </h1>
 
 <h3 align="center">
-  Medicar
+  Desafio: Medicar
 </h3>
+
+<p align="center">Sistema para gestão de consultas em uma clínica médica</p>
 
 
 ## Sobre o desafio
@@ -13,16 +15,17 @@ Durante este desafio você irá construir um sistema para uma clínica chamada M
 ## Histórias de usuário
 * O cliente da clínica pode criar uma conta no sistema
 * O cliente da clínica pode se autenticar no sistema
-* O clinte pode marcar uma consulta
+* O cliente pode marcar uma consulta
   * Não deve ser possível marcar consultas para um dia e horário não disponível ou já alocado para outro cliente
   * Não deve ser possível marcar consultas para dia e horário passados
   * Não deve ser possível marcar consultas para um dia horário na qual o paciente já tem uma consulta marcada
 * O cliente pode desmarcar uma consulta
-  * Não deve ser possível desmarcar uma consulta de um dia e horário passados
+  * Não deve ser possível desmarcar uma consulta que já aconteceu
 * O cliente pode visualizar as suas consultas marcadas que ainda não aconteceram
 * O gestor da clínica pode cadastrar especialidades médicas
 * O gestor da clínica pode cadastrar médicos
 * O gestor da clínica pode alocar médicos em horários específicos de um dia
+* O gestor da clínica pode visualizar todas as consultas marcadas na clínica
 
   
 ## Requisitos ##
