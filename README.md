@@ -1,14 +1,30 @@
-<p align="center">
-  <img src="https://avatars0.githubusercontent.com/u/26383303?s=400&v=4" alt="BackEndBR" width="150" />
-</p>
+<h1 align="center">
+  <img alt="Fastfeet" title="Medicar" src="assets/logo.png" width="300px" />
+</h1>
 
-# Desafio
-Uma rede de clínicas deseja um sistema que ajude seus pacientes a marcar consultas e os médicos a gerenciar os horários disponíveis.
+<h3 align="center">
+  Medicar
+</h3>
 
-<p align="center">
-  <img src="https://i.ibb.co/2kY9xGV/A7RFSTk.png">
-</p>
 
+## Sobre o desafio
+Durante este desafio você irá construir um sistema para uma clínica chamada Medicar com o intuito de auxiliar seus clientes na marcação de consultas e gerenciar seu corpo médico.
+
+## Histórias de usuário
+* O cliente da clínica pode criar uma conta no sistema
+* O cliente da clínica pode se autenticar no sistema
+* O clinte pode marcar uma consulta
+  * Não deve ser possível marcar consultas para um dia e horário não disponível ou já alocado para outro cliente
+  * Não deve ser possível marcar consultas para dia e horário passados
+  * Não deve ser possível marcar consultas para um dia horário na qual o paciente já tem uma consulta marcada
+* O cliente pode desmarcar uma consulta
+  * Não deve ser possível desmarcar uma consulta de um dia e horário passados
+* O cliente pode visualizar as suas consultas marcadas que ainda não aconteceram
+* O gestor da clínica pode cadastrar especialidades médicas
+* O gestor da clínica pode cadastrar médicos
+* O gestor da clínica pode alocar médicos em horários específicos de um dia
+
+  
 ## Requisitos ##
 Para isso foi levando as seguintes condições:
  - Paciente vai possuir acesso com login e senha
