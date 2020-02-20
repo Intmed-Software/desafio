@@ -20,6 +20,7 @@ Para isso foi levando as seguintes condições:
  - Os horários deve seguir o seguinte padrão (dd/mm/YYYY) e (HH:mm), **ex. (01/01/2020) (13:00)**
 
 > Na Sessão ADMIN do sistema
+ - Cadastrar Especialidades
  - Medico deve possuir uma especialidade 
  - Medico pode cadastrar uma ou mais datas e horários
 
