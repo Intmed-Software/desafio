@@ -33,7 +33,7 @@ Serão avaliados os seguintes pontos no desafio final:
 
 * **Cumprimento dos requisitos:** A aplicação não possui escopo aberto e as funcionalidades implementadas devem atender os objetivos especificados. Neste critério vamos avaliar se a sua aplicação atende todos os requisitos de forma funcional
 * **Conhecimento e uso dos recursos da linguagem/framework:** Não recrie a roda! Utilize as ferramentas disponíveis na linguagem e framework utilizados a seu favor e consulte a documentação sempre que necessário. Nesse critério iremos avaliar o seu conhecimento na linguagem e framework utilizados e o empenho em entender e utilizar seus recursos
-* **Organização do projeto e padronização de código:** O seu projeto está organizado? É fácil se guiar na estrutura de pastas do código-fonte? Ela faz sentido diante do seu propósito? O seu código segue um padrão de escrita (próprio ou conveniconado pela comunidade)? Nesse critério iremos avaliar o nível de organização e padronização de escrita do seu código visando a legibilidade e entendimento.
+* **Organização do projeto e padronização de código:** O seu projeto está organizado? É fácil se guiar na estrutura de pastas do código-fonte? Ela faz sentido diante do seu propósito? O seu código segue um padrão de escrita (próprio ou conveniconado pela comunidade)? Nesse critério iremos avaliar o nível de organização e padronização de escrita do seu código visando a legibilidade e entendimento
 * **Estilização e usabilidade:** Iremos avaliar se a sua aplicação segue o layout proposto e a facilidade em usá-lo
 
 
