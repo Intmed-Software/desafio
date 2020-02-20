@@ -185,23 +185,26 @@ GET /consultas/
 [
   {
     "id":1,
-    "dia": "01/01/2020",
+    "dia": "2020-02-05",
     "horario": "12:00",
     "especialidade": "Cardiologia",
     "medico": "Drauzio Varella",
-    "data_agendamento": "2019-12-20T10:45:0-03:00"
+    "data_agendamento": "2020-02-01T10:45:0-03:00"
   },
   {
     "id":1,
-    "dia": "05/01/2020",
+    "dia": "2020-03-01",
     "horario": "09:00",
     "especialidade": "Clínico Geral",
     "medico": "Stephen Vincent Strange",
-    "data_agendamento": "2019-12-20T10:45:0-03:00"
+    "data_agendamento": "2020-02-01T10:45:0-03:00"
   }
 ]
 ```
 
+#### Restrições
+* A listagem não deve exibir consultas para dia e horário passados
+* Os itens da listagem devem vir ordenados por ordem decrescente do dia e horário da consulta. As consultas mais próximas de acontecer devem vir primeiro
 
 ## :art: Frontend
 
@@ -225,38 +228,6 @@ Se optar por desenvolver apenas o Frontend:
 - Os endpoints devem ser apresentados da seguinte maneira
 
 
-**Lista os Médicos de uma Especialidade**
-_<url_base>/especialidades/<especialidade_id>/medicos/_
-```
-{
-  "count": 50,
-  "next": "<url_base>/especialidades/<especialidade_id>/medicos/?page=",
-  "previous": "<url_base>/especialidades/<especialidade_id>/medicos/?page=",
-  "results": [
-    {
-      "id":1,
-      "nome": "Drauzio Varella",
-      "crm": "9999 - CE"
-    },
-    {
-      "id":2,
-      "nome": "Gregory House",
-      "crm": "9999 - DF"
-    },
-    {
-      "id":3,
-      "nome": "Tony Tony Chopper",
-      "crm": "9999 - SP"
-    },
-    {
-      "id":4,
-      "nome": "Stephen Vincent Strange",
-      "crm": "9999 - GO"
-    }
-    ...
-  ]
-}
-```
 **Lista as Consultas de um médico**
 _<url_base>/medicos/<medico_id>/consultas/_
 ```
@@ -316,34 +287,6 @@ _<url_base>/pacientes/<paciente_id>/_
 ```
 
 
-**Lista as Consultas de um Paciente**
-_<url_base>/pacientes/<paciente_id>/consultas/_
-```
-{
-  "count": 50,
-  "next": "<url_base>/pacientes/<paciente_id>/consultas/?page=",
-  "previous": "<url_base>/pacientes/<paciente_id>/consultas/?page=",
-  "results": [
-    {
-      "id":1,
-      "dia": "01/01/2020",
-      "horario": "12:00",
-      "especialidade": "Cardiologia",
-      "medico": "Drauzio Varella",
-      "data_agendamento": "2019-12-20T10:45:0-03:00"
-    },
-    {
-      "id":1,
-      "dia": "05/01/2020",
-      "horario": "09:00",
-      "especialidade": "Clínico Geral",
-      "medico": "Stephen Vincent Strange",
-      "data_agendamento": "2019-12-20T10:45:0-03:00"
-    },
-    ...
-  ]
-}
-```
 
 ## :bulb: Observações ##
 - O repositório deve conter um README com as instruções de instalação
