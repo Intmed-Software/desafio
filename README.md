@@ -53,6 +53,7 @@ Se optar por desenvolver apenas o Frontend:
 
 - Os endpoints devem ser apresentados da seguinte maneira
 
+**Lista as Especialidades**
 _<url_base>/especialidades/_
 ```
 {
@@ -80,7 +81,7 @@ _<url_base>/especialidades/_
   ]
 }
 ```
-
+**Lista os Médicos de uma Especialidade**
 _<url_base>/especialidades/<especialidade_id>/medicos/_
 ```
 {
@@ -112,13 +113,13 @@ _<url_base>/especialidades/<especialidade_id>/medicos/_
   ]
 }
 ```
-
-_<url_base>/especialidades/<especialidade_id>/medicos/<medico_id>/consultas/_
+**Lista as Consultas de um médico**
+_<url_base>/medicos/<medico_id>/consultas/_
 ```
 {
   "count": 50,
-  "next": "<url_base>/especialidades/<especialidade_id>/medicos/<medico_id>/consultas/?page=",
-  "previous": "<url_base>/especialidades/<especialidade_id>/medicos/<medico_id>/consultas/?page=",
+  "next": "<url_base>/medicos/<medico_id>/consultas/?page=",
+  "previous": "<url_base>/medicos/<medico_id>/consultas/?page=",
   "results": [
     {
       "id":1,
@@ -161,6 +162,17 @@ _<url_base>/especialidades/<especialidade_id>/medicos/<medico_id>/consultas/_
 }
 ```
 
+**Dados de um Paciente**
+_<url_base>/pacientes/<paciente_id>/_
+```
+{
+  "nome": "Lucas Freitas",
+  "email": "lucasfreitas@email.com"
+}
+```
+
+
+**Lista as Consultas de um Paciente**
 _<url_base>/pacientes/<paciente_id>/consultas/_
 ```
 {
