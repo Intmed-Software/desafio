@@ -16,17 +16,19 @@ Para isso foi levando as seguintes condições:
  - Paciente deve visualizar na tela inicial suas consultas marcadas
  - Paciente deve poder cancelar consultas
  - Paciente não pode marcar duas consultas no mesmo horário
- - Após consulta marcada ela não deve está mais disponível na de horários disponíveis do médico
- - Os horários deve seguir o seguinte padrão (dd/mm/YYYY) e (HH:mm), **ex. (01/01/2020) (13:00)**
+ - Após consulta marcada o horário do médico não deve está mais disponível para outros pacientes
+ - Os horários das consultas devem seguir o seguinte padrão (dd/mm/YYYY) e (HH:mm), **ex. (01/01/2020) (13:00)**
 
 > Na Sessão ADMIN do sistema
- - Cadastrar Especialidades
+ - Cadastrar, Editar e Remover Especialidades
+ - Cadastrar, Editar e Remover Medicos
  - Medico deve possuir uma especialidade 
  - Medico pode cadastrar uma ou mais datas e horários
 
 ## :pencil:Critérios de Avaliação ##
  - Cumprimento dos requisitos
  - Uso dos recursos disponíveis pelo framework
+ - Domínio da Linguagem
  - Boas práticas de construção de API REST
  - Organização do projeto e padronização de código
  - Estilização e usabilidade: avaliar se o projeto está de acordo com o layout proposto (Frontend)
