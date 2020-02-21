@@ -16,7 +16,7 @@ O Design proposto foi realizado no [Figma](https://www.figma.com/) está dispon�
  - O fluxo para o paciente cancelar uma consulta:
     1. O paciente clica em "Desmarcar" de uma das opções da lista
     2. Deverá exibir uma modal de confirmação
-    3. Ao clicar "Sim" a consulta deve ser desmarcada e a consulta não deve está mais na lista
+    3. Ao clicar "Sim" a consulta deve ser desmarcada e não deverá está mais na lista
 
  ## Considerações ##
 - Deve ser exibido _feedback_ para o usuários quando ocorrer sucesso ou falha nas chamadas de serviços
