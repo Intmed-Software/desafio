@@ -18,3 +18,14 @@ O Design proposto foi realizado no [Figma](https://www.figma.com/) está dispon�
     2. Deverá exibir uma modal de confirmação
     3. Ao clicar "Sim" a consulta deve ser desmarcada e a consulta não deve está mais na lista
 
+ ## Considerações ##
+- Deve ser exibido _feedback_ para o usuários quando ocorrer sucesso ou falha nas chamadas de serviços
+- Deve ser tratado corretamente os códigos HTTP
+
+## Links importantes ##
+Alguns links que podem ajudar no desafio ;)
+
+- https://www.diolinux.com.br/2019/12/figma-ferramenta-design-prototipacao-navegador.html
+- https://angular.io/guide/styleguide
+- https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html
+- https://developer.mozilla.org/pt-BR/docs/Web
