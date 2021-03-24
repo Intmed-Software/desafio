@@ -30,7 +30,7 @@ Deve ser possível criar uma agenda para um médico em um dia específico fornec
 * Não deve ser possível criar mais de uma agenda para um médico em um mesmo dia
 * Não deve ser possível criar uma agenda para um médico em um dia passado
 
-## API
+## :gear:API
 Você deverá construir uma API, seguindo os padrões e boas práticas do REST contendo os seguintes endpoints:
 
 ### Autenticação
