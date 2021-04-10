@@ -1,0 +1,49 @@
+version: '3.9'
+
+services:
+  database:
+    image: postgres:latest
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: medicar
+      POSTGRES_PASSWORD: medicar
+    networks: 
+      - database
+
+  adminer:
+    image: adminer:latest
+    depends_on: 
+      - database
+    ports:
+      - 8080:8080
+    networks: 
+      - database
+
+  backend:
+    image: python:3
+    volumes: 
+      - ./backend:/home/medicar
+    ports:
+      - 8000:8000
+    tty: true
+    stdin_open: true
+    networks: 
+      - api
+      - database
+
+  postwoman:
+    image: liyasthomas/postwoman
+    depends_on:
+      - backend
+    ports: 
+      - 3000:3000
+    networks:
+      - api
+
+networks: 
+  api:
+  database:
+
+volumes:
+  db-data:
