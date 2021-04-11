@@ -10,7 +10,8 @@ class SpecialtyView(View):
         query_filter = request.GET.get('search')
         queryset = Specialty.objects.all()
         if query_filter:
-            queryset = queryset.filter(name=query_filter)
+            print(query_filter)
+            queryset = queryset.filter(name__contains=query_filter)
         serializer = SpecialtySerializer(queryset, many=True)
         return JsonResponse(serializer.data, safe=False)
 
