@@ -19,11 +19,6 @@ class Doctor(models.Model):
         verbose_name = "Médico(a)"
         verbose_name_plural = "Médicos(as)"
 
-    @property
-    def especialidades(self):
-        # return Specialty.objects.filter(id__in=self.specialties)
-        return self.specialties
-
     def save(self, *args, **kwargs):
         today = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         print(today)
