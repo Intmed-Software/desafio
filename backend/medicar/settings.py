@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'medicar',
         'USER': 'medicar',
         'PASSWORD': 'medicar',
-        'HOST': 'intmed_database_1',
+        'HOST': 'medicar_database_1',
         'PORT': '5432',
     }
 }
