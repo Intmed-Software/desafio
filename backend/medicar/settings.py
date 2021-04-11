@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'specialties.apps.SpecialtiesConfig',
     'doctors.apps.DoctorsConfig',
+    'calendars.apps.CalendarsConfig'
 ]
 
 MIDDLEWARE = [
