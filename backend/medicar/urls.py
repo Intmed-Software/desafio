@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from specialties.views import SpecialtyView
 
 
 urlpatterns = [
-    path('especialidades/', include('specialties.urls')),
+    path('especialidades/', SpecialtyView.as_view(), name='Specialty'),
+    # path('especialidades/', include('specialties.urls')),
     path('admin/', admin.site.urls),
 ]
