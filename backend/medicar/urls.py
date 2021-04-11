@@ -16,10 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from specialties.views import SpecialtyView
+from doctors.views import DoctorView
 
 
 urlpatterns = [
-    path('especialidades/', SpecialtyView.as_view(), name='Specialty'),
-    # path('especialidades/', include('specialties.urls')),
+    path('especialidades/', SpecialtyView.as_view(), name='Specialties'),
+    path('medicos/', DoctorView.as_view(), name='Doctors'),
     path('admin/', admin.site.urls),
 ]
