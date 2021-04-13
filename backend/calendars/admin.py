@@ -1,10 +1,10 @@
 from django.contrib import admin
-from .models import Day, Hour
+from .models import Workday, Workhour
 
-class HourAdminInline(admin.TabularInline):
-    model = Hour
+class WorkhourAdminInline(admin.TabularInline):
+    model = Workhour
 
-class DayAdmin(admin.ModelAdmin):
-    inlines = (HourAdminInline, )
+class WorkdayAdmin(admin.ModelAdmin):
+    inlines = (WorkhourAdminInline, )
 
-admin.site.register(Day, DayAdmin)
+admin.site.register(Workday, WorkdayAdmin)
