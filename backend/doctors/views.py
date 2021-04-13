@@ -9,7 +9,7 @@ class DoctorView(View):
     def get(self, request):
         queryset = Doctor.objects.all()
         if request.GET.get('search'):
-            queryset = queryset.filter(name__contains=request.GET.get('search'))
+            queryset = queryset.filter(name__icontains=request.GET.get('search'))
         if request.GET.getlist('especialidade'):
             for specialty in request.GET.getlist('especialidade'):
                 queryset = queryset.filter(specialties=specialty)
