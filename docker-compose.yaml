@@ -3,8 +3,6 @@ version: '3.9'
 services:
   database:
     image: postgres:latest
-    volumes:
-      - db-data:/var/lib/postgresql/data
     environment:
       POSTGRES_USER: medicar
       POSTGRES_PASSWORD: medicar
@@ -44,6 +42,3 @@ services:
 networks: 
   api:
   database:
-
-volumes:
-  db-data:
