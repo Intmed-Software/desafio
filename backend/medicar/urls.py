@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path, include
 from specialties.views import SpecialtyView
 from doctors.views import DoctorView
+from calendars.views import CalendarView
 
 
 urlpatterns = [
     path('especialidades/', SpecialtyView.as_view(), name='Specialties'),
     path('medicos/', DoctorView.as_view(), name='Doctors'),
+    path('agendas/', CalendarView.as_view(), name='Agendas'),
     path('admin/', admin.site.urls),
 ]
