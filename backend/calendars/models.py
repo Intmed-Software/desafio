@@ -22,6 +22,9 @@ class Workday(models.Model):
             raise ValidationError('Não pode registrar em uma data no passado.')
         super().save(*args, **kwargs)
 
+    def hours(self):
+        return Workhour.objects.filter(day=self.id)
+
 class Workhour(models.Model):
     hour = models.TimeField(verbose_name='Horário Disponível')
     day = models.ForeignKey(Workday, on_delete=models.CASCADE, related_name='days', verbose_name='Dia')
