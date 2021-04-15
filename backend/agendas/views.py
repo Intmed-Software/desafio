@@ -7,7 +7,7 @@ from medicos.models import Medico
 from .serializers import DiaSerializer
 from datetime import datetime
 
-class CalendarView(View):
+class AgendaView(View):
   def get(self, request):
     medicos_ids = []
     if request.GET.getlist('medico'):
