@@ -1,13 +1,13 @@
-from django.http import JsonResponse
-from django.views import View
-from django.views.decorators.csrf import csrf_exempt
-from rest_framework.parsers import JSONParser
-from .models import Dia
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework.permissions import IsAuthenticated
+from .models import Dia, Horario
 from medicos.models import Medico
 from .serializers import DiaSerializer
 from datetime import datetime
 
-class AgendaView(View):
+class AgendaView(APIView):
+  permission_classes = (IsAuthenticated,)
   def get(self, request):
     medicos_ids = []
     if request.GET.getlist('medico'):
@@ -19,5 +19,18 @@ class AgendaView(View):
     queryset = Dia.objects.filter(data__gte=datetime.now().date()).order_by('data')
     if medicos_ids:
       queryset = queryset.filter(medico_id__in=medicos_ids)
-    serializer = DiaSerializer(queryset, many=True)
-    return JsonResponse(serializer.data, safe=False)
+
+    return Response({
+      'id': q.id,
+      'dia': q.data,
+      'medico': {
+        'id': q.medico.id,
+        'nome': q.medico.nome,
+        'crm': q.medico.crm,
+        'especialidade': [{
+          'id': e.id, 
+          'name': e.nome
+        } for e in q.medico.especialidades.all()]
+      },
+      'horarios': [h.hora for h in Horario.objects.filter(dia_id=q.id)],
+    } for q in queryset)
