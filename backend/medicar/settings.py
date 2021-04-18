@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-dhvs@-^+7f6518d8o*%j!nv2%kj$18yz$ujnf749da^c94_6=a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,10 +38,19 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'specialties.apps.SpecialtiesConfig',
-    'doctors.apps.DoctorsConfig',
-    'calendars.apps.CalendarsConfig'
+    'rest_framework.authtoken',
+    'corsheaders',
+    'especialidades.apps.EspecialidadesConfig',
+    'medicos.apps.MedicosConfig',
+    'agendas.apps.AgendasConfig',
+    'consultas.apps.ConsultasConfig',
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -51,6 +60,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'medicar.urls'
@@ -106,6 +117,21 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+
+# CORS Validation
+# https://pypi.org/project/django-cors-headers/
+# CORS_ALLOWED_ORIGINS = [
+#     "http://127.0.0.1:3000",
+# ]
+
+# CSRF_TRUSTED_ORIGINS = [
+#     'http://127.0.0.1:3000',
+# ]
+
+# CORS_ALLOW_CREDENTIALS = True
+
+CORS_ALLOW_ALL_ORIGINS = True
 
 
 # Internationalization
