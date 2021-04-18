@@ -3,7 +3,6 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from .models import Medico
 from especialidades.models import Especialidade
-from .serializers import MedicoSerializer
 from rest_framework.permissions import IsAuthenticated
 
 class MedicoView(APIView):
