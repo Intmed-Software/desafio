@@ -15,14 +15,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from specialties.views import SpecialtyView
-from doctors.views import DoctorView
-from calendars.views import CalendarView
+# from rest_framework_simplejwt import views as jwt_views
+from rest_framework.authtoken.views import obtain_auth_token
+from especialidades.views import EspecialidadeView
+from medicos.views import MedicoView
+from agendas.views import AgendaView
+from consultas.views import ConsultaList, ConsultaDetail
 
 
 urlpatterns = [
-    path('especialidades/', SpecialtyView.as_view(), name='Specialties'),
-    path('medicos/', DoctorView.as_view(), name='Doctors'),
-    path('agendas/', CalendarView.as_view(), name='Agendas'),
+    path('especialidades/', EspecialidadeView.as_view()),
+    path('medicos/', MedicoView.as_view()),
+    path('agendas/', AgendaView.as_view()),
+    path('consultas/', ConsultaList.as_view()),
+    path('consultas/<int:id>/', ConsultaDetail.as_view()),
+    path('api-token-auth/', obtain_auth_token, name='api_token_auth'),
     path('admin/', admin.site.urls),
 ]
