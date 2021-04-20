@@ -160,3 +160,7 @@ Thumbs.db
 
 
 # End of https://www.toptal.com/developers/gitignore/api/django
+
+# Custom Git Ignore
+
+backend/static/
