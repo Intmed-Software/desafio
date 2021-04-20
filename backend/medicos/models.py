@@ -9,8 +9,8 @@ class Medico(models.Model):
     especialidades = models.ManyToManyField(Especialidade, verbose_name='Especialidades')
 
     def __str__(self):
-      return "[ " + self.crm + " ]" + " - " + self.nome
+        return "[ " + self.crm + " ]" + " - " + self.nome
 
     class Meta:
-      verbose_name = "Médico(a)"
-      verbose_name_plural = "Médicos(as)"
+        verbose_name = "Médico(a)"
+        verbose_name_plural = "Médicos(as)"
