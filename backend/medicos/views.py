@@ -3,7 +3,6 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from .models import Medico
 from especialidades.models import Especialidade
-from rest_framework.permissions import IsAuthenticated
 
 class MedicoView(APIView):
     permission_classes = (IsAuthenticated,)
@@ -13,14 +12,14 @@ class MedicoView(APIView):
             queryset = queryset.filter(nome__icontains=request.GET.get('search'))
         if request.GET.getlist('especialidade'):
             for especialidade in request.GET.getlist('especialidade'):
-                queryset = queryset.filter(especialidades=especialidade)
+                queryset = queryset.filter(especialidade=especialidade)
 
         return Response({
             'id': q.id,
             'nome': q.nome,
             'crm': q.crm,
-            'especialidade': [{
-                'id': e.id, 
-                'name': e.nome
-            } for e in q.especialidades.all()]
+            'especialidade': {
+                'id': q.especialidade.id, 
+                'name': q.especialidade.nome
+            }
         } for q in queryset)

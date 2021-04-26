@@ -23,10 +23,10 @@ class AgendaView(APIView):
                 'id': q.medico.id,
                 'nome': q.medico.nome,
                 'crm': q.medico.crm,
-                'especialidade': [{
-                    'id': e.id, 
-                    'name': e.nome
-                } for e in q.medico.especialidades.all()]
+                'especialidade': {
+                    'id': q.medico.especialidade.id, 
+                    'name': q.medico.especialidade.nome
+                }
             },
             # 'horarios': [h.hora for h in q.horario_set.exclude(id__in=horarios_exclude_id)],
             'horarios': self.lista_horarios_vagos(q.horario_set.all()),
@@ -39,7 +39,7 @@ class AgendaView(APIView):
                 medicos_ids.append(int(medico))
         if especialidades:
             for especialidade in especialidades.split(","):
-                medicos_ids += Medico.objects.filter(especialidades=especialidade).values_list('id', flat=True)
+                medicos_ids += Medico.objects.filter(especialidade=especialidade).values_list('id', flat=True)
         if medicos_ids:
             medicos_ids = list(dict.fromkeys(medicos_ids))
             queryset = queryset.filter(medico_id__in=medicos_ids)

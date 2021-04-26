@@ -6,7 +6,7 @@ class Medico(models.Model):
     crm = models.CharField(max_length=64, unique=True, verbose_name='CRM')
     email = models.CharField(max_length=64, unique=True, blank=True, null=True, verbose_name='E-mail')
     telefone = models.CharField(max_length=64, unique=True, blank=True, null=True, verbose_name='Telefone')
-    especialidades = models.ManyToManyField(Especialidade, verbose_name='Especialidades')
+    especialidade = models.ForeignKey(Especialidade, on_delete=models.RESTRICT, verbose_name='Especialidade')
 
     def __str__(self):
         return "[ " + self.crm + " ]" + " - " + self.nome

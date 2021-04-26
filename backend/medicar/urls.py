@@ -18,6 +18,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from rest_framework.authtoken.views import obtain_auth_token
+from clientes.views import ClienteView, MyAcountView
 from especialidades.views import EspecialidadeView
 from medicos.views import MedicoView
 from agendas.views import AgendaView
@@ -25,11 +26,13 @@ from consultas.views import ConsultaList, ConsultaDetail
 
 
 urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('conta/login/', obtain_auth_token, name='api_token_auth'),
+    path('conta/cadastrar/', ClienteView.as_view()),
+    path('conta/minha-conta/', MyAcountView.as_view()),
     path('especialidades/', EspecialidadeView.as_view()),
     path('medicos/', MedicoView.as_view()),
     path('agendas/', AgendaView.as_view()),
     path('consultas/', ConsultaList.as_view()),
     path('consultas/<int:id>/', ConsultaDetail.as_view()),
-    path('users/login/', obtain_auth_token, name='api_token_auth'),
-    path('admin/', admin.site.urls),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
