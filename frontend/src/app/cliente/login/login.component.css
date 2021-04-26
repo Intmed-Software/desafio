@@ -1,0 +1,24 @@
+section#login-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#login-container > form#login-form {
+  width: 400px;
+}
+
+section#login-container > form#login-form > img#login-logo {
+  height: 50px;
+  width: 180px;
+}
+
+section#login-container > form#login-form > div#login-btn {
+  width: 100%;
+}
+
+section#login-container > form#login-form > div#login-btn > button {
+  width: 50%;
+}

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "appMedicar": {
+    "medicar-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/appMedicar",
+            "outputPath": "dist/medicar-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -62,18 +63,18 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "host": "0.0.0.0",
-            "browserTarget": "appMedicar:build"
+            "browserTarget": "medicar-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "appMedicar:build:production"
+              "browserTarget": "medicar-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "appMedicar:build"
+            "browserTarget": "medicar-app:build"
           }
         },
         "test": {
@@ -110,16 +111,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "appMedicar:serve"
+            "devServerTarget": "medicar-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "appMedicar:serve:production"
+              "devServerTarget": "medicar-app:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "appMedicar"
+  "defaultProject": "medicar-app"
 }

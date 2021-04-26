@@ -1,0 +1,23 @@
+<div id="consulta-cadastro">
+  <form class="row gy-3">
+    <h3>Nova Consulta</h3>
+    <select (change)="getMedicos()" [(ngModel)]="slcEspecialidade" name="especialidade" class="form-select col-fluid" aria-label="especialidade">
+      <option value="" disabled selected>Especialidade</option>
+      <option *ngFor='let especialidade of especialidades' [value]="especialidade.id">{{ especialidade.nome }}</option>
+    </select>
+    <select (change)="getAgendas()" [(ngModel)]="slcMedico" name="medico" class="form-select col-fluid" aria-label="médico" [attr.disabled]='slcMedicoDisable'>
+      <option value="" disabled selected>Médico</option>
+      <option *ngFor='let medico of medicos' [value]="medico.id">{{ medico.nome }}</option>
+    </select>
+    <select (change)="getHorarios()" [(ngModel)]="slcData" name="data" class="form-select col-fluid" aria-label="data" disabled [attr.disabled]='slcDataDisable'>
+      <option value="" disabled selected>Data</option>
+      <option *ngFor='let agenda of agendas' [value]="agenda.id">{{ agenda.dia }}</option>
+    </select>
+    <select (change)="slcCadastroDisable = null" [(ngModel)]="slcHora" name="hora" class="form-select col-fluid" aria-label="hora" disabled [attr.disabled]='slcHoraDisable'>
+      <option value="" disabled selected>Hora</option>
+      <option *ngFor='let hora of horarios' [value]="hora">{{ hora }}</option>
+    </select>
+    <button (click)="clearForm()" type="button" class="btn btn-link col-6">Cancelar</button>
+    <button (click)="marcarConsulta()" type="button" class="btn btn-primary col-6" disabled [attr.disabled]='slcCadastroDisable'>Confirmar</button>
+</form>
+</div>

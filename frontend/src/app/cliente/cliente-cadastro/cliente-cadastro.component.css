@@ -1,0 +1,15 @@
+section#cadastro-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#cadastro-container > form#cadastro-form {
+  width: 400px;
+}
+section#cadastro-container img#cadastro-logo {
+  height: 50px;
+  width: 180px;
+}

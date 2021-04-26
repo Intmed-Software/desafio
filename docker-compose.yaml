@@ -26,7 +26,7 @@ services:
       - 8000:8000
     tty: true
     stdin_open: true
-    command: bash -c "pip install -r /home/medicar/requirements.txt && python /home/medicar/manage.py migrate && python /home/medicar/manage.py collectstatic && gunicorn medicar.wsgi --bind 0.0.0.0:8000 --chdir /home/medicar"
+    # command: bash -c "pip install -r /home/medicar/requirements.txt && python /home/medicar/manage.py migrate && gunicorn medicar.wsgi --bind 0.0.0.0:8000 --chdir /home/medicar"
     networks: 
       - api
       - database

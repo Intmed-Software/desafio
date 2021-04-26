@@ -1,0 +1,11 @@
+<nav class="navbar navbar-light bg-white">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img src="assets/logo.png" id="logo" class="img-fluid" alt="Medicar Logo">
+    </a>
+    <div class="navbar-brand">
+      <a *ngIf="minhaConta" id="user">{{ minhaConta.nome }}</a>
+      <button (click)="logout()" id="logout" class="btn btn-link">Desconectar</button>
+    </div>
+  </div>
+</nav>

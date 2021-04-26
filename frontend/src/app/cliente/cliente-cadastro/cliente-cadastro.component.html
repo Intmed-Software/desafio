@@ -1,0 +1,13 @@
+<section id="cadastro-container" class="container">
+  
+  <form id="cadastro-form" class="row gy-3">
+    <img src="assets/logo.png" id="cadastro-logo" class="img-fluid" alt="Medicar Logo">
+    <p class="col-fluid"><b>Crie sua conta</b></p>
+    <input class="col" type="text" class="form-control" [(ngModel)]="cliente.nome" name="nome" placeholder="Nome">
+    <input class="col" type="email" class="form-control" [(ngModel)]="cliente.email" name="email" placeholder="Email">
+    <input class="col" type="password" class="form-control" [(ngModel)]="cliente.senha" name="senha" placeholder="Senha">
+    <input class="col" type="password" class="form-control" [(ngModel)]="cliente.senha_confirma" name="senha_confirma" placeholder="Confirmar Senha">
+    <button (click)="clearForm()" type="button" class="btn btn-link col-6">Cancelar</button>
+    <button (click)="createCliente()" type="button" class="btn btn-primary col-6">Confirmar</button>
+  </form>
+</section>

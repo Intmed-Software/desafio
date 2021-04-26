@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+
+<div id="consultas" class="card">
+  <div class="card-body">
+    <div class="row">
+      <h3 class="col-9"><b>Consulta Clínica</b></h3>
+      <a routerLink="/consultas/cadastrar" class="btn btn-primary col-3">+ Nova Consulta</a>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Especialidade</th>
+          <th scope="col">Profissional</th>
+          <th scope="col">Data</th>
+          <th scope="col">Hora</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let consulta of consultas">
+          <td>{{ consulta.especialidade }}</td>
+          <td>{{ consulta.medico }}</td>
+          <td>{{ consulta.dia }}</td>
+          <td>{{ consulta.horario }}</td>
+          <td><a (click)="deleteConsulta(consulta.id)" class="btn btn-link">X Desmarcar</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>  
+</div>
