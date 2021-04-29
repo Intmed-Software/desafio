@@ -20,16 +20,17 @@ export class ClienteCadastroComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.clearForm();
+    this.cliente = new ClienteCadastro;
   }
 
   clearForm() {
     this.cliente = new ClienteCadastro;
+    this.router.navigate(['/login']);
   }
 
   createCliente() {
     this.clienteCadastroService.createCliente(this.cliente).subscribe(data => {
-      this.clearForm();
+      this.cliente = new ClienteCadastro;
       this.router.navigate(['/login']);
     })
   }
