@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MinhaContaService } from 'src/app/cliente/minha-conta/minha-conta.service';
 import { MinhaConta } from 'src/app/cliente/minha-conta/minha-conta.model';
+import { InterceptorService } from 'src/app/interceptor/interceptor.service';
 
 @Component({
   selector: 'app-navbar',
@@ -11,17 +12,19 @@ import { MinhaConta } from 'src/app/cliente/minha-conta/minha-conta.model';
 export class NavbarComponent implements OnInit {
 
   minhaConta: MinhaConta;
+  show: boolean = false;
 
   constructor(
     private router: Router,
-    private  minhaContaService: MinhaContaService
+    private minhaContaService: MinhaContaService
   ) { }
 
   ngOnInit(): void {
-    if (localStorage['medicarToken'] == null && sessionStorage.getItem('medicarToken') == null) {
-      this.router.navigate(['/login']);
+    let intSer = new InterceptorService();
+    if(intSer.getAuthToken()){
+      this.show = true;
+      this.getUserData();
     }
-    this.getUserData();
   }
 
   getUserData(){
