@@ -12,9 +12,8 @@ export class ClienteCadastroService {
   constructor(private http: HttpClient) { }
 
   createCliente(cliente: ClienteCadastro) {
-    const headers = { 'content-type': 'application/json'}  
     const body=JSON.stringify(cliente);
-    return this.http.post(this.urlAPI + 'conta/cadastrar/', body,{'headers':headers})
+    return this.http.post(this.urlAPI + 'conta/cadastrar/', body)
   }
 
 }

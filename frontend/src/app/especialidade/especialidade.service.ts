@@ -11,20 +11,6 @@ export class EspecialidadeService {
   constructor(private http: HttpClient) { }
 
   getEspecialidades(){
-
-    let token: String;
-
-    if (localStorage['medicarToken'])
-    {
-      token = localStorage['medicarToken'];
-    }
-    else {
-      token = sessionStorage.getItem('medicarToken')
-    }
-
-    const headers = {
-      'Authorization': "Token " + token
-    }
-    return this.http.get(this.urlAPI + 'especialidades/', {'headers':headers});
+    return this.http.get(this.urlAPI + 'especialidades/');
   }
 }

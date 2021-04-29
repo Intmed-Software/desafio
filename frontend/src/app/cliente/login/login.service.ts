@@ -13,9 +13,8 @@ export class LoginService {
   constructor(private http: HttpClient) { }
 
   userLogin(login: Login) {
-    const headers = { 'content-type': 'application/json'}  
     const body=JSON.stringify(login);
-    return this.http.post(this.urlAPI + 'conta/login/', body,{'headers':headers})
+    return this.http.post(this.urlAPI + 'conta/login/', body)
   }
 
 }

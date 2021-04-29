@@ -14,37 +14,11 @@ export class MedicoService {
   ) { }
 
   getMedicos(){
-    let token: String;
-
-    if (localStorage['medicarToken'])
-    {
-      token = localStorage['medicarToken'];
-    }
-    else {
-      token = sessionStorage.getItem('medicarToken')
-    }
-
-    const headers = {
-      'Authorization': "Token " + token
-    }
-    return this.http.get(this.urlAPI + 'medicos/', {'headers':headers});
+    return this.http.get(this.urlAPI + 'medicos/');
   }
 
   getMedicosEspecialidade(especialidade_id){
-    let token: String;
-
-    if (localStorage['medicarToken'])
-    {
-      token = localStorage['medicarToken'];
-    }
-    else {
-      token = sessionStorage.getItem('medicarToken')
-    }
-
-    const headers = {
-      'Authorization': "Token " + token
-    }
-    return this.http.get(this.urlAPI + 'medicos/?especialidade=' + especialidade_id, {'headers':headers});
+    return this.http.get(this.urlAPI + 'medicos/?especialidade=' + especialidade_id);
   }
 
 }

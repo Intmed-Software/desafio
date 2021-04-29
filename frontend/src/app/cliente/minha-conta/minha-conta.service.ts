@@ -14,19 +14,6 @@ export class MinhaContaService {
   constructor(private http: HttpClient) { }
 
   getMinhaConta(){
-    let token: String;
-
-    if (localStorage['medicarToken'])
-    {
-      token = localStorage['medicarToken'];
-    }
-    else {
-      token = sessionStorage.getItem('medicarToken')
-    }
-
-    const headers = {
-      'Authorization': "Token " + token
-    }
-    return this.http.get(this.urlAPI + 'conta/minha-conta/', {'headers':headers});
+    return this.http.get(this.urlAPI + 'conta/minha-conta/');
   }
 }

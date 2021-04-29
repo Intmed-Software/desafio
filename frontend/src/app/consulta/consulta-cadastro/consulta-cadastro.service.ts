@@ -14,21 +14,8 @@ export class ConsultaCadastroService {
   ) { }
 
   marcarConsulta(agenda_id: Number, horario: Time){
-    let token: String;
-
-    if (localStorage['medicarToken'])
-    {
-      token = localStorage['medicarToken'];
-    }
-    else {
-      token = sessionStorage.getItem('medicarToken')
-    }
-    const headers = { 
-      'content-type': 'application/json',
-      'Authorization': "Token " + token
-    }  
     const body=JSON.stringify({'agenda_id': agenda_id, 'horario': horario});
-    return this.http.post(this.urlAPI + 'consultas/', body,{'headers':headers});
+    return this.http.post(this.urlAPI + 'consultas/', body);
   }
 
 }
