@@ -25,7 +25,7 @@ class Consulta(models.Model):
         if disponibilidade.data < datetime.now().date():
             raise ValidationError({"detail": "Não é possível marcar uma consulta em uma data no passado."})
         horario = Horario.objects.get(id=self.horario.id)
-        if disponibilidade.data == datetime.now().date() and horario.hora < datetime.now().time():
+        if disponibilidade.data < datetime.now().date() and horario.hora < datetime.now().time():
             raise ValidationError({"detail": "Não é possível marcar uma consulta em um horário no passado."})
         self.data_agendamento = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         super().save(*args, **kwargs)
@@ -35,7 +35,7 @@ class Consulta(models.Model):
         if disponibilidade.data < datetime.now().date():
             raise ValidationError({"detail": "Não é possível desmarcar uma consulta em uma data no passado."})
         horario = Horario.objects.get(id=self.horario.id)
-        if disponibilidade.data == datetime.now().date() and horario.hora < datetime.now().time():
+        if disponibilidade.data < datetime.now().date() and horario.hora < datetime.now().time():
             raise ValidationError({"detail": "Não é possível desmarcar uma consulta em um horário no passado."})
         super().delete()
 
