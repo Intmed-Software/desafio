@@ -18,9 +18,6 @@ export class ConsultaListaComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    if (localStorage['medicarToken'] == null && sessionStorage.getItem('medicarToken') == null) {
-      this.router.navigate(['/login']);
-    }
     this.getConsultas();
   }
 
