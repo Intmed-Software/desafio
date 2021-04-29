@@ -5,6 +5,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule }   from '@angular/forms';
+import { InterceptorModule } from './interceptor/interceptor.module';
+// Import Components
 import { LoginComponent } from './cliente/login/login.component';
 import { EspecialidadeComponent } from './especialidade/especialidade.component';
 import { MedicoComponent } from './medico/medico.component';
@@ -35,6 +37,7 @@ import { MinhaContaComponent } from './cliente/minha-conta/minha-conta.component
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
+    InterceptorModule,
     FormsModule,
   ],
   providers: [],
