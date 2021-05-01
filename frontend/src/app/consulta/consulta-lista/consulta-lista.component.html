@@ -2,7 +2,7 @@
   <div class="card-body">
     <div class="row">
       <h3 class="col-9"><b>Consulta Clínica</b></h3>
-      <a routerLink="/consultas/cadastrar" class="btn btn-primary col-3">+ Nova Consulta</a>
+      <a routerLink="/consultas/cadastrar" class="btn btn-primary col-3"><i class="fas fa-plus"></i> Nova Consulta</a>
     </div>
     <table class="table">
       <thead>
@@ -20,7 +20,7 @@
           <td>{{ consulta.medico }}</td>
           <td>{{ consulta.dia }}</td>
           <td>{{ consulta.horario }}</td>
-          <td><a (click)="deleteConsulta(consulta.id)" class="btn btn-link">X Desmarcar</a></td>
+          <td><a (click)="deleteConsulta(consulta.id)" class="btn btn-link"><i class="fas fa-times"></i> Desmarcar</a></td>
         </tr>
       </tbody>
     </table>
