@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
 
   login = new Login();
+  passwordVisibility = false;
 
   constructor(
     private router: Router,
@@ -38,4 +39,9 @@ export class LoginComponent implements OnInit {
       this.router.navigate(['/']);
     })
   }
+
+  setPasswordVisibility() {
+    this.passwordVisibility = !this.passwordVisibility;    
+  }
+
 }

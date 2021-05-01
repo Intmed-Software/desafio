@@ -1,15 +1,23 @@
 <section id="login-container">
   <form id="login-form" class="row gy-3">
     <img src="assets/logo.png" id="login-logo" class="img-fluid" alt="Medicar Logo">
-    <input class="col-fluid" type="email" class="form-control" [(ngModel)]="login.username" name="username" placeholder="Email ou Login">
-    <input class="col-fluid" type="password" class="form-control" [(ngModel)]="login.password" name="password" placeholder="Senha">
+    <div>
+      <input class="col-fluid" type="email" class="form-control" [(ngModel)]="login.username" name="username" placeholder="Email ou Login">
+    </div>
+    <div class="input-container">
+      <input id="password" class="col-fluid" [type]="!passwordVisibility ? 'password' : 'text'" class="form-control" [(ngModel)]="login.password" name="password" placeholder="Senha">
+      <span (click)="setPasswordVisibility()" id="passwordvisibility">
+        <i *ngIf="passwordVisibility" class="icon far fa-eye"></i>
+        <i *ngIf="!passwordVisibility" class="icon far fa-eye-slash"></i>
+      </span>
+    </div>
     <div class="form-check col-fluid">
       <input [(ngModel)]="login.rememberme" class="form-check-input" type="checkbox" name="remeberme">
       <label class="form-check-label" for="flexCheckDefault">
         Lembrar Minha Senha
       </label>
     </div>
-    <a routerLink="/conta/cadastrar/" class="btn btn-link col-6">Criar Conta</a>
-    <button (click)="userLogin()" type="button" class="btn btn-primary col-6">Acessar</button>
+    <button (click)="userLogin()" type="button" class="btn btn-primary col-12 col-lg-6 order-lg-2">Acessar</button>
+    <a routerLink="/conta/cadastrar/" class="btn btn-link col-12 col-lg-6 order-lg-1">Criar Conta</a>
   </form>
 </section>

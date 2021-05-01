@@ -22,3 +22,13 @@ section#login-container > form#login-form > div#login-btn {
 section#login-container > form#login-form > div#login-btn > button {
   width: 50%;
 }
+
+div.input-container {
+  position:relative;
+}
+
+div.input-container span#passwordvisibility {
+  position: absolute;
+  top: 7px;
+  right: 24px;
+}
