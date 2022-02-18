@@ -192,7 +192,7 @@ Não há retorno (vazio)
 - Não deve ser possível desmarcar uma consulta que nunca foi marcada (identificador inexistente)
 - Não deve ser possível desmarcar uma consulta que já aconteceu
 
-### Extras
+### :clock1: Extras
 
 Estes itens não são obrigatório para a entrega do desafio, mas seria interessante se você conseguisse fazer dentro do prazo estipulado com o seu recrutador
 
