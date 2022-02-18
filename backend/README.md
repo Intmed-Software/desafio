@@ -196,9 +196,10 @@ Não há retorno (vazio)
 
 Estes itens não são obrigatório para a entrega do desafio, mas seria interessante se você conseguisse fazer dentro do prazo estipulado com o seu recrutador
 
-#### Integração com Trello
+##### Integração com Trello
+Ao criar uma nova consulta, deverá ser criado um card no trello com as informações da consulta.
 
-#### Outros itens extras
+##### Outros itens extras
 
 - Possuir testes unitários
 - Utilizar Postgres ao invés do sqlite
