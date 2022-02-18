@@ -18,7 +18,7 @@ O fluxo para que o paciente possa marcar uma consulta deve seguir os seguintes p
 Você pode utilizar uma API do Medicar hospedado no [Heroku](https://www.heroku.com/). 
 
 O endereço da API é [https://intmed-api-medicar.herokuapp.com](https://intmed-api-medicar.herokuapp.com).
-Para ter acessos aos _endpoints_ é preciso possuir um usuário, conforme é descrito na sessão [backend](https://github.com/Intmed-Software/desafio/tree/master/backend#api) desse desafio. 
+Para ter acessos aos _endpoints_ é preciso possuir um usuário, conforme é descrito na sessão [backend](https://github.com/Intmed-Software/desafio/tree/master/frontend/api-documentation#api) desse desafio. 
 
 ### Criar usuário
 É necessário implementar a criação de usuário para acesso ao sistema
@@ -71,7 +71,7 @@ Authorization: Token 9944b09199c62bcf9418ad846dd0e4bbdfc6ee4b
 ```
 
 ### Observações
-Nessa API disponibilizada os dados são apresentados de forma **paginada**, então é importante aplicar os filtros conforme é descrito na sessão [backend](https://github.com/Intmed-Software/desafio/tree/master/backend#api) desse desafio.
+Nessa API disponibilizada os dados são apresentados de forma **paginada**, então é importante aplicar os filtros conforme é descrito na sessão [backend](https://github.com/Intmed-Software/desafio/tree/master/frontend/api-documentation#api) desse desafio.
 
 #### Padrão de paginação
 ```
